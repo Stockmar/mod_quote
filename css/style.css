@@ -1,0 +1,71 @@
+/* ==========================================================================
+Quote Style
+========================================================================== */
+
+div.quote-section h2{
+    margin: 0;
+    text-align: center;
+    //font-size: 1.3em;
+} 
+div.quote-section blockquote{ 
+    margin-top: 20px;
+    //border-left:3px solid @primary;
+    border-left:transparent;
+    padding:2px 0 2px 5px;
+} 
+
+div.quote-section blockquote footer .name,
+div.quote-section blockquote footer .title{
+    display: block;
+    font-weight: 300;
+    padding-left: 10px;
+} 
+
+div.quote-section blockquote :before,
+div.quote-section blockquote:after{ 
+    content: "";
+} 
+
+.cbp-qtrotator{
+    position: relative;
+    //margin: 1em auto 5em auto;
+    //max-width: 800px;
+    width: 100%;
+    min-height: 170px;
+}
+
+.cbp-qtcontent{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    min-height: 180px;
+    top: 0;
+    z-index: 2;
+    display: none
+}
+
+.cbp-qtrotator .cbp-qtcontent.current {
+    display: block
+}
+
+.cbp-qtrotator blockquote {
+    // margin: 40px 0 0 0;
+    // padding: 0
+}
+
+.cbp-qtrotator blockquote p {
+    //margin: 0.4em 0 1em
+}
+
+.cbp-qtrotator blockquote footer {
+    margin-top:10px;
+    text-align: left;
+}
+
+.cbp-qtprogress{
+    position: absolute;
+    //background: fade(@primary, 50%);
+    height: 2px;
+    width: 0%;
+    z-index: 1000
+}
